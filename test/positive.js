@@ -6,13 +6,13 @@ var checkNum = require('../index');
 describe('positive()', function() {
   it('should found 5 as a positive number', function() {
     expect(function() {
-      checkNum(5).positive(); 
+      checkNum(5).positive();
     }).to.not.throw(RangeError);
   });
-  
+
   it('should found 0.00000000000001 as a positive number', function() {
     expect(function() {
-      checkNum(0.00000000000001).positive(); 
+      checkNum(0.00000000000001).positive();
     }).to.not.throw(RangeError);
   });
 
@@ -32,13 +32,13 @@ describe('positive()', function() {
 describe('negative()', function() {
   it('should found -5 as a negative number', function() {
     expect(function() {
-      checkNum(-5).negative(); 
+      checkNum(-5).negative();
     }).to.not.throw(RangeError);
   });
-  
+
   it('should found -0.00000000000001 as a negative number', function() {
     expect(function() {
-      checkNum(-0.00000000000001).negative(); 
+      checkNum(-0.00000000000001).negative();
     }).to.not.throw(RangeError);
   });
 
@@ -54,4 +54,3 @@ describe('negative()', function() {
     }).to.throw(RangeError);
   });
 });
-
