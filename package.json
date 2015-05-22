@@ -1,0 +1,34 @@
+{
+  "name": "chknum",
+  "version": "0.0.1",
+  "description": "Easy check numeric parameters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha test/**/*.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SachaCR/chknum.git"
+  },
+  "keywords": [
+    "validators",
+    "number",
+    "check",
+    "validate",
+    "numbers",
+    "numeric",
+    "parameters",
+    "params"
+  ],
+  "author": "SachaCR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SachaCR/chknum/issues"
+  },
+  "homepage": "https://github.com/SachaCR/chknum#readme",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5"
+  }
+}
