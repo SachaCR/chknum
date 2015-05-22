@@ -1,6 +1,6 @@
 {
   "name": "chknum",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy check numeric parameters.",
   "main": "index.js",
   "scripts": {
