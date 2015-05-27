@@ -4,7 +4,8 @@
   "description": "Easy check numeric parameters.",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha test/**/*.js || true"
+    "posttest": "jshint *.js lib/ test/ || echo -e '\\033[31mERROR JsHint : see above for more details.\\033[0m'",
+    "test": "istanbul cover _mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -12,12 +13,15 @@
   },
   "keywords": [
     "validators",
+    "validator",
     "number",
-    "check",
-    "validate",
     "numbers",
     "numeric",
+    "check",
+    "verify",
+    "validate",
     "parameters",
+    "parameter",
     "params"
   ],
   "author": "SachaCR",
