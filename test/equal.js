@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var checkNum = require('../index');
 
-describe('checkNum()', function() {
+describe('equal()', function() {
   it('should not throw an error if num is equal to value', function() {
     expect(function() {
       checkNum(5).equal(5);
