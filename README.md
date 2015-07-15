@@ -2,8 +2,10 @@
 
 Check numeric params in Javascript.
 
+See documentation [here](https://github.com/SachaCR/chknum)
+
 Make it easy to read :
-- `chknum(x).greaterThan(5).lesserThan(10);`
+- `chknum(x)isInt().greaterThan(5).lesserThan(10);`
 - `chknum(x).gt(5).lt(10);`
 
 more compact and readable than :
@@ -20,6 +22,12 @@ Example :
 var chknum require ('chknum');
 
 function (x, y, z) {
+
+  // This will check if the number is an integer.
+  chknum(x).isInt();
+
+  // This will check if the number is a float.
+  chknum(x).isFloat();
 
   // This will throw a RangeError if x does'nt match.
   chknum(x).greaterThan(5).lesserThan(10);
